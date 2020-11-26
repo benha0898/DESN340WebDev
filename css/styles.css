@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Orkney";
+    src: url("fonts/orkney-regular.otf");
+}
+@font-face {
+    font-family: "Orkney";
+    src: url("fonts/orkney-regular-bold.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Orkney";
+    src: url("fonts/orkney-medium.otf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Orkney";
+    src: url("fonts/orkney-light.otf");
+    font-weight: 300;
+}
+
+:root {
+    --product-image-l: calc(100vw * 0.25 * 0.7);
+    --product-image-m: calc(100vw * 0.25 * 0.85);
+    --product-image-s: calc(100vw * 0.25 * 0.9);
+}
+
+.divider {
+    height: 2px;
+    width: 80%;
+    margin: 100px auto;
+}
+
+.navbar-fixed {
+    width: 100%;
+    position: fixed;
+    height: 10vh;
+    background-color: rgba(8, 7, 7, .5);
+    backdrop-filter: blur(6px);
+}
+nav {
+    width: 70%;
+    height: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 10vh;
+    background-color: transparent;
+}
+nav .nav-wrapper .brand-logo img {
+    vertical-align: middle;
+    height: 6vh;
+}
+nav li {
+    margin: 0 20px;
+}
+nav li a {
+    display: inline;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #EEDECE;
+    border-radius: 20px;;
+}
+nav li a:hover {
+    background-color: #EEDECE;
+    color: #080707;
+    transition: background-color .2s;
+    -webkit-transition: background-color .2s;
+}
+
+body {
+    background-image: url("../images/background.png");
+    background-size: contain;
+    color: #EEDECE;
+    font-family: "Orkney", sans-serif;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#hero {
+    height: 100vh;
+    font-size: 24px;
+}
+
+#hero > .row {
+    height: 100%;
+    display: flex;
+    /* border: 1px solid green; */
+    align-items: center;
+}
+
+#hero p {
+    padding: 0 !important;
+}
+
+#hero > .row > .col:last-child {
+    height: 100%;
+}
+
+#hero-carousel {
+    height: 100%;
+    z-index: 1;
+    overflow: visible;
+    margin-left: -8vw;
+}
+
+#hero-carousel .carousel-item {
+    height: 65vh;
+    width: calc(65vh * 0.6);
+}
+#hero-carousel img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3vh;
+    box-shadow: 2vh 3vh 5vh rgba(238, 222, 206, 0.5);
+}
+
+#hero-title {
+    position: relative;
+    margin-right: -1vw;
+    z-index: 2;
+}
+
+.indicators {
+    padding-left: 15vh !important;
+}
+.indicators li, .indicators li.active {
+    margin: 30px 30px !important;
+}
+
+.my-btn {
+    display: inline;
+    padding: 15px 20px;
+    border: 3px solid #EEDECE;
+    border-radius: 30px;
+    color: #EEDECE;
+    font-size: 20px;
+}
+.my-btn:hover {
+    background-color: #EEDECE;
+    color: #080707;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+}
+.section-btn {
+    display: inline-block;
+    padding: 15px 20px;
+    margin-bottom: 40px;
+}
+.section-btn-short {
+    display: inline-block;
+    padding: 15px 50px;
+    margin-bottom: 40px;
+}
+#navbar-btn {
+    padding: 10px 20px;
+}
+
+.product-image-container {
+    display: table;
+    width: 100%;
+    text-align: center;
+    font-size: 44px;
+    line-height: 48px;
+    font-weight: 500;
+}
+.product-image-container > * {
+    display: table-cell;
+    padding: 10px;
+}
+.product-image {
+    object-fit: cover;
+    width: var(--product-image-l);
+    height: var(--product-image-l);
+    margin: 0 auto;
+    display: block;
+    border-radius: 20%;
+    box-shadow: 2vh 1vh 5vh rgba(238, 222, 206, 0.5);
+}
+.overlay {
+    opacity: 0;
+    width: var(--product-image-l);
+    height: var(--product-image-l);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20%;
+    transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    background-color: rgba(255, 255, 255, .5);
+    transition: .3s ease;
+}
+.product-image-container a {
+    position: relative;
+}
+.product-image-container a:hover .overlay {
+    opacity: .8;
+    backdrop-filter: blur(2px);
+}
+.product-image-container .product-name {
+    transition: .2s ease;
+}
+.product-image-container .hover-area:hover ~ .product-name {
+    font-size: 48px;
+}

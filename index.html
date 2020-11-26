@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Ptarmigan</title>
+</head>
+
+<body>
+    <header class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><img src="images/ptarmigan-logo.png" alt="Ptarmigan Logo" id="header-logo"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse button right"><span class="btn-open"></span></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#" class="my-btn" id="navbar-btn">Requeset a Quote</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="container" id="hero">
+        <div class="row">
+            <div class="col l6">
+                <div class="row" id="hero-title">
+                        <img class="responsive-img" src="images/ptarmigan.png" alt="Ptarmigan">
+                </div>
+                <div class="row">
+                    <p class="col l10">
+                        Endless wood product options, tailored to your every need.
+                    </p>
+                </div>
+                <div class="row">
+                    <a href="#" class="my-btn">View all products</a>
+                </div>
+            </div>
+            <div class="col l6 hero-right">
+                    <div class="row carousel" id="hero-carousel">
+                        <a class="carousel-item" href="#one!"><img src="images/hero-image-1.png"></a>
+                        <a class="carousel-item" href="#two!"><img src="images/hero-image-2.jpg"></a>
+                        <a class="carousel-item" href="#three!"><img src="images/hero-image-3.jpg"></a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="container" id="our-products">
+        <div class="row">
+            <h2>Our Products</h2>
+        </div>
+        <div class="row center">
+            <a href="#" class="my-btn section-btn-short">Browse All</a>
+        </div>
+        <div class="row product-image-container">
+            <div class="col l4">
+                <div class="row hover-area">
+                    <a href="#"><img class="product-image" width="400" height="400" src="images/lumber.jpg" alt="Lumber"><div class="overlay"></div></a>
+                </div>
+                <div class="row product-name">
+                    Lumber
+                </div>
+            </div>
+            <div class="col l4">
+                <div class="row hover-area">
+                    <a href="#"><img class="product-image" width="400" height="400" src="images/timber.jpeg" alt="Timber"><div class="overlay"></div></a>
+                </div>
+                <div class="row product-name">
+                    Timber
+                </div>
+            </div>
+            <div class="col l4">
+                <div class="row hover-area">
+                    <a href="#"><img class="product-image" width="400" height="400" src="images/specialty-woods.jpg" alt="Specialty Woods"><div class="overlay"></div></a>
+                </div>
+                <div class="row product-name">
+                    Specialty Woods
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="container" id="our-story">
+        <div class="row">
+            <h2>Our Story</h2>
+        </div>
+        <div class="row">
+            <div class="col l6">
+                <div class="carousel" id="story-carousel">
+                    <a class="carousel-item" href="#one!"><img src="images/our-story-1.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img src="images/our-story-2.jpg"></a>
+                </div>
+            </div>
+            <div class="col l6">
+                <div class="row">
+                    <p>Started in 1976, Ptarmigan Lumber is one of the oldest specialty lumber suppliers in Alberta. We have worked with industry experts on a number landmark projects in the province and are one of a select group of North American importers to carry J-grade dimensional lumber.</p>
+                    <p>Family owned and operated, we strive to deliver high-quality products and exceptional customer service.</p>
+                </div>
+                <div class="row">
+                    <a href="#" class="my-btn section-btn">Meet Our Family</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="durable">
+        <div class="row">
+            <h2>Durable.<br>Scalable.<br>Customizable.</h2>
+        </div>
+        <div class="row">
+            <a href="#" class="my-btn section-btn">Our Past Projects</a>
+        </div>
+        <div class="row">
+            This is a video!
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="container" id="request-quote">
+        <div class="row">
+            <h2>Request a Quote</h2>
+        </div>
+        <div class="row">
+            <form action="" class="col l12">
+                <div class="row">
+                    <div class="input-field col l12">
+                        <input type="text" class="validate" id="name">
+                        <label for="name">Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l10">
+                        <input type="email" class="validate" id="email">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l8">
+                        <input type="tel" class="validate" id="phone">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l12">
+                        <textarea name="Inquiry" id="inquiry" cols="20" rows="10" class="materialize-textarea"></textarea>
+                        <label for="inquiry">Request / Inquiry</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <a href="#" class="my-btn section-btn-short">Submit</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col l4">
+                    <div class="row">
+                        <div class="col l4">
+                            <a href="#"><img class="responsive-img" src="images/ptarmigan-logo.png" alt="Ptarmigan Logo"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l8">
+                    <div class="row">
+                        <div class="col l1">
+                            <i class="material-icons prefix">location_on</i>
+                        </div>
+                        <div class="col l11">
+                            <p>124 St. Albert Trail<br>Edmonton, AB<br>T5K 1L9</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l1">
+                            <i class="material-icons prefix">phone</i>
+                        </div>
+                        <div class="col l11">
+                            <p>(780) 777-7777</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l1">
+                            <i class="material-icons prefix">access_time</i>
+                        </div>
+                        <div class="col l11">
+                            <p>Monday - Friday<br>8am - 4pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright center">
+                <div class="container">
+                    © 2020 Ptarmigan Ltd.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/application.js"></script>
+</body>
+</html>
