@@ -17,194 +17,215 @@
     <header class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo"><img src="images/ptarmigan-logo.png" alt="Ptarmigan Logo" id="header-logo"></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse button right"><span class="btn-open"></span></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#" class="my-btn" id="navbar-btn">Requeset a Quote</a></li>
+                <a href="#"><img src="images/ptarmigan-logo.png" alt="Ptarmigan Logo" id="header-logo"></a>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="javascript:void(0);">Our Story</a></li>
+                    <li><a href="javascript:void(0);">Products</a></li>
+                    <li><a href="#request-quote" class="my-btn" id="navbar-btn">Request a Quote</a></li>
                 </ul>
             </div>
         </nav>
+        <ul id="nav-mobile" class="sidenav">
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="javascript:void(0);">Our Story</a></li>
+            <li><a href="javascript:void(0);">Products</a></li>
+            <li><a href="#request-quote" class="my-btn" id="navbar-btn">Request a Quote</a></li>
+        </ul>
     </header>
+
+    <div class="main">
+        <section class="container" id="hero">
+            <div class="row flex">
+                <div class="col s12 l6">
+                    <div class="row" id="hero-title">
+                            <img class="responsive-img" src="images/ptarmigan.png" alt="Ptarmigan">
+                    </div>
+                    <div class="row">
+                        <p class="col l10">
+                            Endless wood product options, tailored to your every need.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <a href="#our-products" class="my-btn">
+                            Explore 
+                            <i class="material-icons prefix">keyboard_arrow_down</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 l6">
+                        <div class="row carousel" id="hero-carousel">
+                            <a class="carousel-item" href="#one!"><img src="images/hero-image-1.png"></a>
+                            <a class="carousel-item" href="#two!"><img src="images/hero-image-2.jpg"></a>
+                            <a class="carousel-item" href="#three!"><img src="images/hero-image-3.jpg"></a>
+                        </div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="our-products" class="my-section">
+            <img class="tree-ring-1" src="images/tree-ring.png" alt="tree ring">
+            <section class="container">
+                <div class="row center">
+                    <h2>Quality in Every Fiber</h2>
+                </div>
+                <div class="center">
+                    <a href="javascript:void(0);" class="my-btn section-btn-short">Browse All</a>
+                </div>
+                <div class="row product-image-container">
+                    <div class="col s12 l4">
+                        <div class="row hover-area">
+                            <a href="javascript:void(0);"><img class="product-image" width="400" height="400" src="images/lumber.jpg" alt="Lumber"><div class="overlay"></div></a>
+                        </div>
+                        <div class="row product-name">
+                            Lumber
+                        </div>
+                        <div class="row product-microtext">
+                            Our dimensional lumber is widely used for the framing of houses, garages, sheds, decks and many other building projects.
+                        </div>
+                    </div>
+                    <div class="col s12 l4">
+                        <div class="row hover-area">
+                            <a href="javascript:void(0);"><img class="product-image" width="400" height="400" src="images/timber.jpeg" alt="Timber"><div class="overlay"></div></a>
+                        </div>
+                        <div class="row product-name">
+                            Timber
+                        </div>
+                        <div class="row product-microtext">
+                            Timber products are ideal for residential, commercial and heavy industrial use. Its high strength makes it perfect for framing construction and as load bearing members.
+                        </div>
+                    </div>
+                    <div class="col s12 l4">
+                        <div class="row hover-area">
+                            <a href="javascript:void(0);"><img class="product-image" width="400" height="400" src="images/specialty-woods.jpg" alt="Specialty Woods"><div class="overlay"></div></a>
+                        </div>
+                        <div class="row product-name">
+                            Specialty Woods
+                        </div>
+                        <div class="row product-microtext">
+                            Our speciality wood products, locally sourced from the greater Edmonton area, are the perfect application for architectural, commercial, and residential use.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <img class="tree-ring-2" src="images/tree-ring.png" alt="tree ring">
+        </div>
     
-    <section class="container" id="hero">
-        <div class="row">
-            <div class="col l6">
-                <div class="row" id="hero-title">
-                        <img class="responsive-img" src="images/ptarmigan.png" alt="Ptarmigan">
-                </div>
-                <div class="row">
-                    <p class="col l10">
-                        Endless wood product options, tailored to your every need.
-                    </p>
-                </div>
-                <div class="row">
-                    <a href="#" class="my-btn">View all products</a>
-                </div>
+        <section class="container my-section" id="our-story">
+            <div class="row center">
+                <h2>Our Story</h2>
             </div>
-            <div class="col l6 hero-right">
-                    <div class="row carousel" id="hero-carousel">
-                        <a class="carousel-item" href="#one!"><img src="images/hero-image-1.png"></a>
-                        <a class="carousel-item" href="#two!"><img src="images/hero-image-2.jpg"></a>
-                        <a class="carousel-item" href="#three!"><img src="images/hero-image-3.jpg"></a>
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section class="container" id="our-products">
-        <div class="row">
-            <h2>Our Products</h2>
-        </div>
-        <div class="row center">
-            <a href="#" class="my-btn section-btn-short">Browse All</a>
-        </div>
-        <div class="row product-image-container">
-            <div class="col l4">
-                <div class="row hover-area">
-                    <a href="#"><img class="product-image" width="400" height="400" src="images/lumber.jpg" alt="Lumber"><div class="overlay"></div></a>
-                </div>
-                <div class="row product-name">
-                    Lumber
-                </div>
-            </div>
-            <div class="col l4">
-                <div class="row hover-area">
-                    <a href="#"><img class="product-image" width="400" height="400" src="images/timber.jpeg" alt="Timber"><div class="overlay"></div></a>
-                </div>
-                <div class="row product-name">
-                    Timber
-                </div>
-            </div>
-            <div class="col l4">
-                <div class="row hover-area">
-                    <a href="#"><img class="product-image" width="400" height="400" src="images/specialty-woods.jpg" alt="Specialty Woods"><div class="overlay"></div></a>
-                </div>
-                <div class="row product-name">
-                    Specialty Woods
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section class="container" id="our-story">
-        <div class="row">
-            <h2>Our Story</h2>
-        </div>
-        <div class="row">
-            <div class="col l6">
-                <div class="carousel" id="story-carousel">
-                    <a class="carousel-item" href="#one!"><img src="images/our-story-1.jpg"></a>
-                    <a class="carousel-item" href="#two!"><img src="images/our-story-2.jpg"></a>
-                </div>
-            </div>
-            <div class="col l6">
-                <div class="row">
-                    <p>Started in 1976, Ptarmigan Lumber is one of the oldest specialty lumber suppliers in Alberta. We have worked with industry experts on a number landmark projects in the province and are one of a select group of North American importers to carry J-grade dimensional lumber.</p>
-                    <p>Family owned and operated, we strive to deliver high-quality products and exceptional customer service.</p>
-                </div>
-                <div class="row">
-                    <a href="#" class="my-btn section-btn">Meet Our Family</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container" id="durable">
-        <div class="row">
-            <h2>Durable.<br>Scalable.<br>Customizable.</h2>
-        </div>
-        <div class="row">
-            <a href="#" class="my-btn section-btn">Our Past Projects</a>
-        </div>
-        <div class="row">
-            This is a video!
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section class="container" id="request-quote">
-        <div class="row">
-            <h2>Request a Quote</h2>
-        </div>
-        <div class="row">
-            <form action="" class="col l12">
-                <div class="row">
-                    <div class="input-field col l12">
-                        <input type="text" class="validate" id="name">
-                        <label for="name">Name</label>
+            <div class="row flex">
+                <div class="col s12 l6">
+                    <div class="row carousel" id="story-carousel">
+                        <a class="carousel-item" href="#one!"><img src="images/our-story-1.jpg"></a>
+                        <a class="carousel-item" href="#two!"><img src="images/our-story-2.jpg"></a>
+                        <a class="carousel-item" href="#two!"><img src="images/our-story-3.jpg"></a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="input-field col l10">
-                        <input type="email" class="validate" id="email">
-                        <label for="email">Email</label>
+                <div class="col s12 l6">
+                    <div class="row">
+                        <p>Started in 1976, Ptarmigan Lumber is one of the oldest specialty lumber suppliers in Alberta. We have worked with industry experts on a number landmark projects in the province and are one of a select group of North American importers to carry J-grade dimensional lumber.</p>
+                        <p>Family owned and operated, we strive to deliver high-quality products and exceptional customer service.</p>
+                        <p>After more than 3 decades of superior work Ptarmigan’s portfolio of services now covers lumber, timber, specialty woods, and a curated selection of other building materials.</p>
+                    </div>
+                    <div class="center">
+                        <a href="javascript:void(0);" class="my-btn section-btn">Meet Our Family</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="input-field col l8">
-                        <input type="tel" class="validate" id="phone">
-                        <label for="phone">Phone Number</label>
-                    </div>
+            </div>
+        </section>
+    
+        <div class="divider"></div>
+        
+        <div class="my-section">
+            <section class="container">
+                <div class="row center">
+                    <h2>Durable. Scalable. Customizable.</h2>
                 </div>
-                <div class="row">
-                    <div class="input-field col l12">
-                        <textarea name="Inquiry" id="inquiry" cols="20" rows="10" class="materialize-textarea"></textarea>
-                        <label for="inquiry">Request / Inquiry</label>
-                    </div>
+                <div class="center">
+                    <a href="javascript:void(0);" class="my-btn section-btn">Our Past Projects</a>
                 </div>
-            </form>
+            </section>
+            <div id="video-container">
+                <video id="my-video" autoplay muted="muted" loop>
+                    <source src="images/video.mp4" type="video/mp4" descr>
+                </video>
+                <div class="playpause"></div>
+            </div>
         </div>
-        <div class="row">
-            <a href="#" class="my-btn section-btn-short">Submit</a>
+    
+        <div class="divider"></div>
+    
+        <div class="my-section">
+            <img class="tree-ring-3" src="images/tree-ring.png" alt="tree ring">
+            <img class="tree-ring-4" src="images/tree-ring.png" alt="tree ring">
+            <section class="container" id="request-quote">
+                <div class="row center">
+                    <h2>Request a Quote</h2>
+                </div>
+                <div class="row">
+                    <form action="" class="col s12">
+                        <div class="row my-form-row">
+                            <input type="text" class="col s12 l8 offset-l2" id="name" placeholder="Name">
+                        </div>
+                        <div class="row my-form-row">
+                            <input type="email" class="col s12 l6 offset-l2" id="email" placeholder="Email">
+                        </div>
+                        <div class="row my-form-row">
+                            <input type="tel" class="col s12 l6 offset-l2" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="row my-form-row">
+                            <textarea name="Inquiry" class="col s12 l8 offset-l2" id="inquiry" rows="10" placeholder="Request/Inquiry"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="center">
+                    <a href="javascript:void(0);" class="my-btn section-btn-short">Submit</a>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
+    
 
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col l4">
-                    <div class="row">
-                        <div class="col l4">
-                            <a href="#"><img class="responsive-img" src="images/ptarmigan-logo.png" alt="Ptarmigan Logo"></a>
+                <div class="col s4 l2 footer-nav">
+                    <div class="row center">
+                        <div class="col s12">
+                            <a href="#"><img class="responsive-img" id="footer-logo" src="images/ptarmigan-logo.png" alt="Ptarmigan Logo"></a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <ul>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Our Story</a></li>
-                            <li><a href="#">Gallery</a></li>
+                        <ul class="col l12">
+                            <li><a href="javascript:void(0);">Products</a></li>
+                            <li><a href="javascript:void(0);">Our Story</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col l8">
+                <div class="col s8 l4">
                     <div class="row">
-                        <div class="col l1">
+                        <div class="col s2 l2 offset-l2">
                             <i class="material-icons prefix">location_on</i>
                         </div>
-                        <div class="col l11">
+                        <div class="col s10 l8">
                             <p>124 St. Albert Trail<br>Edmonton, AB<br>T5K 1L9</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col l1">
+                        <div class="col s2 l2 offset-l2">
                             <i class="material-icons prefix">phone</i>
                         </div>
-                        <div class="col l11">
+                        <div class="col s10 l8">
                             <p>(780) 777-7777</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col l1">
+                        <div class="col s2 l2 offset-l2">
                             <i class="material-icons prefix">access_time</i>
                         </div>
-                        <div class="col l11">
+                        <div class="col s10 l8">
                             <p>Monday - Friday<br>8am - 4pm</p>
                         </div>
                     </div>
